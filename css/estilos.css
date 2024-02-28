@@ -258,3 +258,17 @@ footer {
 .card:hover .card-img-top {
     filter: blur(0);
 }
+
+@media (max-width:480px) {
+    .hero {
+        height: 800px;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .hero-content p {
+        width: 100%;
+    }
+}
