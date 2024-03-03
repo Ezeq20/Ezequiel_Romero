@@ -31,6 +31,69 @@ img {
   margin: 0;
 }
 
+nav {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: right;
+  border-bottom: 2px solid #000000;
+  width: 10000px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  margin-left: -25px;
+  height: 80px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+nav -link,
+nav .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #111;
+  margin: 5px;
+  border-radius: 10px;
+}
+nav -link:hover,
+nav .navbar-brand:hover {
+  border: 2px solid #111;
+}
+
+.bg-red {
+  background-color: #ee5844;
+}
+
+header {
+  border-bottom: 1px solid #111;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: #ee5844;
+  color: #111;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -5px;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
 .hero {
   background-size: cover;
   height: 600px;
@@ -145,78 +208,7 @@ button:hover {
   background-color: #ee5844;
 }
 
-nav {
-  display: inline-block;
-  background-color: #111;
-  color: #fff;
-  padding: 15px;
-  text-align: right;
-  border-bottom: 2px solid #000000;
-  width: 10000px;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  margin-left: -25px;
-  height: 80px;
-}
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  margin-right: 25px;
-  margin-top: 15px;
-}
-nav -link,
-nav .navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  transition: 0.3s;
-  padding: 5px;
-  border: 2px solid transparent;
-  border-bottom: 2px solid #111;
-  margin: 5px;
-  border-radius: 10px;
-}
-nav -link:hover,
-nav .navbar-brand:hover {
-  border: 2px solid #111;
-}
-
-.bg-red {
-  background-color: #ee5844;
-}
-
-header {
-  border-bottom: 1px solid #111;
-  text-align: center;
-  padding: 10px 20px;
-}
-
-footer {
-  background-color: #ee5844;
-  color: #111;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-left: -5px;
-}
-
-main {
-  margin: 20px;
-  padding: 20px;
-}
-
-.card {
-  width: 400px;
-  border-radius: 0;
-  border: 2px solid #ee5844;
-  padding: 0;
-  transition: 0.3s;
-  overflow: hidden;
-}
-.card -main {
+.card-main {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -224,7 +216,8 @@ main {
   padding: 5px;
   gap: 10px;
 }
-.card -ls {
+
+.card-ls {
   width: 600px;
   height: 100%;
   padding: 30px;
@@ -232,6 +225,15 @@ main {
   margin-left: 200px;
   display: inline-block;
   text-align: center;
+}
+
+.titletwo {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .divcontact {

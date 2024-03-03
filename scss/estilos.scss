@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 @import 'base/vars';
 @import 'base/_reset.scss';
 
@@ -8,6 +6,9 @@
 @import 'components/footer';
 @import 'components/main';
 
+@import 'layouts/generales';
 @import 'layouts/signup';
 @import 'layouts/contact';
 @import 'layouts/mediaqueries';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
