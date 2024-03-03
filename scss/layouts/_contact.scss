@@ -1,0 +1,49 @@
+.divcontact { 
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: $primary-color;
+    box-shadow: 0 0 20px 20px #191919;
+    border: 5px solid #000000;
+    border-radius: 2%;
+}
+
+.row {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    box-shadow: 0 0 20px 20px #191919;
+    border: 3px solid #000000;
+    border-radius: 2%;
+}
+
+label {
+    margin-bottom: 0.5em;
+    color: $secondary-color; 
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fff;
+    color: $secondary-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    & :hover {
+        background-color: $primary-color;
+    }
+}
+

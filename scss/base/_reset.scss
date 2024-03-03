@@ -1,0 +1,44 @@
+$color-schema: light;
+$bg-color: dark;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff
+}
+
+li {
+    text-decoration: none;
+}
+
+body {
+    font-family: $primary-font;
+    padding: 5px;
+
+    @if $color-schema == dark {
+        background-color: #fff;
+    } @else if $color-schema == light {
+        background-color: $secondary-color;
+    } @else {
+        background-color: #f5f5dc;
+    }
+
+    @if $bg-color == light {
+        color: $secondary-color;
+    } @else if $bg-color == dark {
+        color: #fff;
+    } @else {
+        color: #e41f0d;
+    }
+}
+
+img {
+    width: 200px;
+}
