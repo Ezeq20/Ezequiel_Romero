@@ -1,28 +1,27 @@
-.card {
-    width: 400px;
-    border-radius: 0;
-    border: 2px solid $primary-color;
-    padding: 0;
-    transition: .3s;
-    overflow: hidden;
+.card-main {
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    gap: 10px;
+}
 
-    & -main {
-        display: flex;
-        flex-direction: row-reverse; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 5px;
-        gap: 10px;
-    }
+.card-ls {
+    width: 600px;
+    height: 100%;
+    padding: 30px;
+    margin: 200px auto;
+    margin-left: 200px;
+    display: inline-block;
+    text-align: center;
+}
 
-    & -ls {
-        width: 600px;
-        height: 100%;
-        padding: 30px;
-        margin: 200px auto;
-        margin-left: 200px;
-        display: inline-block;
-        text-align: center;
-    }
-    
+.titletwo {
+    text-align: center;
+            text-decoration: underline;
+            margin: 20px;
+            margin-top: 100px;
+            font-size: 60px;
+            font-weight: bold;
 }
