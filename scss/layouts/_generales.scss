@@ -13,10 +13,10 @@
             @extend .font;
             @include text-margin;
         }
-    
-        p {
-            @extend .font;
-        }
+    }
+
+    p {
+        @extend .font;
     }
 }
 
