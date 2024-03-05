@@ -1,6 +1,5 @@
 footer {
-    background-color: $primary-color;
-    color: $secondary-color;
+    @extend .colortwo;
     text-align: center;
     padding: 1em;
     position: fixed;

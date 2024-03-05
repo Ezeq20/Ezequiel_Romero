@@ -1,5 +1,6 @@
 @import 'base/vars';
-@import 'base/_reset.scss';
+@import 'base/reset';
+@import 'base/utilities';
 
 @import 'components/navbar';
 @import 'components/header';

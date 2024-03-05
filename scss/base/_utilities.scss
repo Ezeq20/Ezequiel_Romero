@@ -1,0 +1,40 @@
+.colortwo {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.colorthree {
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-color: $primary-color;
+}
+
+.estilo {
+    border-radius: 0;
+    transition: .3s;
+}
+
+.font {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+@mixin text-margin {
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+@mixin flexible {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hero($width, $height) {
+    width: $width;
+    height: $height;
+}
+
