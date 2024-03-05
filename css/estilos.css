@@ -270,7 +270,8 @@ button:hover {
     padding-bottom: 15%;
   }
   .row .text-center {
-    margin: 30%;
+    margin: 35%;
+    margin-left: 20%;
   }
   .card {
     padding: 0;
@@ -286,28 +287,25 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .hero, .hero-content, h1, h2, p, .row, .text-center, .card, .btn-primary {
+  .hero, h1, h2, .row, .card, .btn-primary {
     margin: 5%;
     width: 95%;
   }
-  .row {
-    padding-bottom: 15%;
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h2 {
+    margin: 2%;
   }
   .text-center {
-    margin-top: 20%;
-    padding: 10px;
-  }
-  .card {
-    padding: 0;
-    margin: 25%;
-    font-size: small;
-  }
-  .card .btn-primary {
-    font-size: 15px;
-    width: 200px;
-    padding: 5px;
-    margin-left: -2px;
     text-align: center;
+    justify-content: center;
+    margin: 35%;
+    margin: 110px;
+    margin-left: 0px;
+  }
+  footer {
+    margin-right: 300px;
   }
 }
 
