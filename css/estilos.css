@@ -147,6 +147,8 @@ main {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 400px;
   border: 2px solid #ee5844;
   padding: 0;
@@ -264,33 +266,30 @@ button:hover {
   .hero-content p {
     font-size: smaller;
   }
+  .row {
+    padding-bottom: 15%;
+  }
+  .text-center {
+    margin-top: 20%;
+    padding: 10px;
+  }
+  .card {
+    padding: 0;
+    margin: 25%;
+    font-size: small;
+  }
+  .card .btn-primary {
+    font-size: 15px;
+    width: 200px;
+    padding: 5px;
+    margin-left: -2px;
+    text-align: center;
+  }
 }
-.row {
-  padding-bottom: 15%;
-}
-
-.text-center {
-  margin-top: 20%;
-  padding: 10px;
-}
-
-.card {
-  padding: 0;
-  margin: 25%;
-  font-size: small;
-}
-.card .btn-primary {
-  font-size: 15px;
-  width: 200px;
-  padding: 5px;
-  margin-left: -2px;
-  text-align: center;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .hero {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   .hero-content {
     padding: 15px;
@@ -298,9 +297,24 @@ button:hover {
   .hero-content p {
     width: 100%;
   }
+  .row {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-.row {
-  grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1200px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .hero-content {
+    padding: 15px;
+  }
+  .hero-content p {
+    width: 100%;
+  }
+  .row {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

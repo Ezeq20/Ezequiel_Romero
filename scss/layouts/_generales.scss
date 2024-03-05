@@ -24,6 +24,8 @@
 
 .card {
     @extend .estilo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 400px;
     border: 2px solid $primary-color;
     padding: 0;
@@ -104,4 +106,3 @@ button {
         background-color: #fff;
     }
 }
-
