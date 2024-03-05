@@ -242,14 +242,16 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  .hero {
-    grid-template-columns: repeat(4, 1fr);
-  }
   .hero-content {
     padding: 15px;
   }
   .hero-content p {
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -1,6 +1,6 @@
 @media (max-width:480px) {
     .hero {
-     grid-template-columns: repeat(4, 1fr);
+        
 
         &-content {
             padding: 15px;
@@ -9,5 +9,11 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width:1200px) {
+    .row {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
