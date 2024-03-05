@@ -1,6 +1,7 @@
 .hero {
     @include flexible;
     background-size: cover;
+    height: 600px;
     gap: 15px;
 
     &-content {
@@ -14,7 +15,8 @@
         }
 
         p {
-            @extend .font;
+            font-size: 25px;
+            font-weight: bold;
         }
     }
 }
