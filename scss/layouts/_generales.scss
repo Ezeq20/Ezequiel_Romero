@@ -8,7 +8,7 @@
     &-content {
         @include hero(100%, 100%);
         @include center;
-        display:flex;
+        display: grid;
         text-align: center;
 
         h1 {

@@ -133,7 +133,7 @@ main {
   width: 100%;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: grid;
   text-align: center;
 }
 .hero-content h1 {
@@ -242,6 +242,9 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    display: flex;
+  }
   .hero-content {
     padding: 15px;
   }
@@ -250,6 +253,15 @@ button:hover {
   }
 }
 @media (max-width: 1200px) {
+  .hero {
+    display: flex;
+  }
+  .hero-content {
+    padding: 15px;
+  }
+  .hero-content p {
+    width: 100%;
+  }
   .row {
     grid-template-columns: repeat(4, 1fr);
   }
