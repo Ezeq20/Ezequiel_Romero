@@ -1,5 +1,5 @@
 .hero {
-    @include grid;
+    @include flexible;
     @include center;
     background-size: cover;
     height: 600px;

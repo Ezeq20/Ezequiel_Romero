@@ -1,6 +1,6 @@
 @media (max-width:480px) {
     .hero {
-        height: 800px;
+     grid-template-columns: repeat(4, 1fr);
 
         &-content {
             padding: 15px;
