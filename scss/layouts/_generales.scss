@@ -1,7 +1,6 @@
 .hero {
     @include flexible;
     background-size: cover;
-    height: 600px;
     gap: 15px;
 
     &-content {
