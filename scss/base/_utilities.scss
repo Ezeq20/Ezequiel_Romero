@@ -26,11 +26,18 @@
     margin-top: 100px;
 }
 
-@mixin flexible {
-    display:flex;
-    flex-direction: column;
+@mixin center {
+    width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+@mixin grid {
+    padding: 10px;
+    height: 500px;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
 }
 
 @mixin hero($width, $height) {

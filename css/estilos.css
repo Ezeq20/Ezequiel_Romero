@@ -118,8 +118,12 @@ main {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background-size: cover;
@@ -127,12 +131,12 @@ main {
   gap: 15px;
 }
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   text-align: center;
 }
 .hero-content h1 {
@@ -143,7 +147,6 @@ main {
 }
 .hero-content p {
   font-size: 25px;
-  font-weight: bold;
 }
 
 .card {

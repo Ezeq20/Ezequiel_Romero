@@ -1,12 +1,14 @@
 .hero {
-    @include flexible;
+    @include grid;
+    @include center;
     background-size: cover;
     height: 600px;
     gap: 15px;
 
     &-content {
-        @include flexible;
         @include hero(100%, 100%);
+        @include center;
+        display:flex;
         text-align: center;
 
         h1 {
@@ -16,7 +18,6 @@
 
         p {
             font-size: 25px;
-            font-weight: bold;
         }
     }
 }
