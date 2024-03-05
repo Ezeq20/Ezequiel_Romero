@@ -269,9 +269,8 @@ button:hover {
   .row {
     padding-bottom: 15%;
   }
-  .text-center {
-    margin-top: 20%;
-    padding: 10px;
+  .row .text-center {
+    margin: 30%;
   }
   .card {
     padding: 0;
@@ -287,33 +286,28 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .hero-content {
-    padding: 15px;
-  }
-  .hero-content p {
-    width: 100%;
+  .hero, .hero-content, h1, h2, p, .row, .text-center, .card, .btn-primary {
+    margin: 5%;
+    width: 95%;
   }
   .row {
-    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 15%;
   }
-}
-@media (max-width: 1200px) {
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+  .text-center {
+    margin-top: 20%;
+    padding: 10px;
   }
-  .hero-content {
-    padding: 15px;
+  .card {
+    padding: 0;
+    margin: 25%;
+    font-size: small;
   }
-  .hero-content p {
-    width: 100%;
-  }
-  .row {
-    grid-template-columns: repeat(6, 1fr);
+  .card .btn-primary {
+    font-size: 15px;
+    width: 200px;
+    padding: 5px;
+    margin-left: -2px;
+    text-align: center;
   }
 }
 

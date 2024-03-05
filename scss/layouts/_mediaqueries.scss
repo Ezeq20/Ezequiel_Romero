@@ -27,8 +27,37 @@
 
     .row {
         padding-bottom: 15%;
+
+        .text-center {
+            margin: 30%;
+        }
     }
         
+    .card {
+        padding: 0;
+        margin: 25%;
+        font-size: small;
+        
+        .btn-primary {
+            font-size: 15px;
+            width: 200px;
+            padding: 5px;
+            margin-left: -2px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .hero, .hero-content, h1, h2, p, .row, .text-center, .card, .btn-primary{
+    margin: 5%;
+    width: 95%;
+    }
+
+    .row {
+        padding-bottom: 15%;
+    }
+
     .text-center {
         margin-top: 20%;
         padding: 10px;
@@ -49,40 +78,7 @@
     }
 }
 
-@media (max-width:768px) {
-    .hero {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-
-        &-content {
-            padding: 15px;
-    
-            p {
-                width: 100%;
-            }
-        }
-    }
-
-    .row {
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
-
 @media (max-width:1200px) {
-    .hero {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-
-        &-content {
-            padding: 15px;
     
-            p {
-                width: 100%;
-            }
-        }
-    }
-
-    .row {
-        grid-template-columns: repeat(6, 1fr);
-    }
+   
 }
