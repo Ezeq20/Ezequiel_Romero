@@ -77,7 +77,7 @@ nav ul li {
   margin-right: 25px;
   margin-top: 15px;
 }
-nav -link,
+nav-link,
 nav .navbar-brand {
   font-size: 24px;
   font-weight: bold;
@@ -88,7 +88,7 @@ nav .navbar-brand {
   margin: 5px;
   border-radius: 10px;
 }
-nav -link:hover,
+nav-link:hover,
 nav .navbar-brand:hover {
   border: 2px solid #111;
 }
@@ -104,12 +104,14 @@ header {
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 3, 1fr;
   text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
+  padding: 45px 0px;
+  grid-gap: 50px;
+  margin: auto;
   width: 100%;
-  margin-left: -5px;
+  max-width: 1200px;
 }
 
 main {
@@ -208,22 +210,24 @@ button:hover {
   background-color: #fff;
 }
 
-.card-main {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+.row card-main {
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  gap: 1rem;
   justify-content: space-evenly;
   padding: 5px;
-  gap: 10px;
 }
-
-.card-ls {
+.row .card-ls {
   width: 600px;
   height: 100%;
   padding: 30px;
   margin: 200px auto;
   margin-left: 200px;
-  display: inline-block;
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  gap: 1rem;
   text-align: center;
 }
 
@@ -248,7 +252,7 @@ button:hover {
   .hero {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 10px;
+    padding: 30px;
     width: 100%;
   }
   .hero-content {
@@ -256,9 +260,9 @@ button:hover {
   }
   .hero-content h1 {
     font-size: 30px;
-    padding: 25px;
-    margin: 20px;
-    margin-bottom: 25px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 2px;
   }
   .hero-content h2 {
     font-size: 20px;
@@ -267,15 +271,23 @@ button:hover {
     font-size: smaller;
   }
   .row {
-    padding-bottom: 15%;
+    padding-bottom: 25%;
   }
   .row .text-center {
-    margin: 35%;
-    margin-left: 20%;
+    margin-top: 20px;
+    margin: 15%;
+    text-align: center;
+    justify-items: center;
+    padding: 15px;
   }
   .card {
-    padding: 0;
-    margin: 25%;
+    display: grid;
+    width: 100%;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 1rem;
+    padding: 20px;
+    margin: 40%;
     font-size: small;
   }
   .card .btn-primary {
@@ -285,11 +297,34 @@ button:hover {
     margin-left: -2px;
     text-align: center;
   }
+  .nav-link,
+  .navbar-brand {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li {
+    font-size: 20px;
+  }
 }
 @media (max-width: 768px) {
   .hero, h1, h2, .row, .card, .btn-primary {
-    margin: 5%;
-    width: 95%;
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 1rem;
   }
   .hero-content {
     width: 100%;
@@ -307,10 +342,16 @@ button:hover {
   footer {
     width: 100%;
   }
+  .card-ls {
+    margin-left: auto;
+  }
 }
 @media (max-width: 1200px) {
   .card {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 1rem;
     padding: 15px;
     margin-top: 30px;
   }
@@ -320,10 +361,17 @@ button:hover {
     overflow: hidden;
   }
   .card-ls {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 1rem;
     font-size: 15px;
   }
   .card-ls h1 {
     font-size: 35px;
+  }
+  .divcontact {
+    margin-left: 20px;
   }
 }
 

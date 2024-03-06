@@ -1,9 +1,11 @@
 footer {
     @extend .colortwo;
+    display: grid;
+    grid-template-columns: 3, 1fr;
     text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
+    padding: 45px 0px;
+    grid-gap: 50px;
+    margin: auto;
     width: 100%;
-    margin-left: -5px;
+    max-width: 1200px;
 }

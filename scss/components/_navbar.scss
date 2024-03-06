@@ -20,7 +20,7 @@ nav {
         margin-top: 15px;
     }
 
-    & -link,
+    &-link,
     .navbar-brand {
         font-size: 24px;
         font-weight: bold;
@@ -32,7 +32,7 @@ nav {
         border-radius: 10px;
     }
 
-    & -link:hover,
+    &-link:hover,
     .navbar-brand:hover {
         border: 2px solid $secondary-color;
     }
