@@ -173,12 +173,12 @@ footer {
   line-height: 45px;
   color: #fff;
   margin-right: 10px;
-  background-color: #111;
+  background-color: #2fcdcd;
   text-align: center;
   transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: #00ffff;
+  color: #1d3333;
 }
 .pie-pagina .grupo-2 {
   background-color: #2fcdcd;
