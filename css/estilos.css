@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
 
@@ -57,44 +59,61 @@ img {
 }
 
 nav {
-  display: inline-block;
-  background-color: #111;
-  color: #fff;
-  padding: 15px;
-  text-align: right;
-  border-bottom: 2px solid #000000;
-  width: 10000px;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  margin-left: -25px;
+  background: #2fcdcd;
   height: 80px;
-}
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  margin-right: 25px;
-  margin-top: 15px;
-}
-nav-link,
-nav .navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  transition: 0.3s;
-  padding: 5px;
-  border: 2px solid transparent;
-  border-bottom: 2px solid #111;
-  margin: 5px;
-  border-radius: 10px;
-}
-nav-link:hover,
-nav .navbar-brand:hover {
-  border: 2px solid #111;
+  width: 100%;
 }
 
-.bg-red {
-  background-color: #ee5844;
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+li a.active, li a:hover {
+  background: 90;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 header {
@@ -248,101 +267,42 @@ button:hover {
   border-radius: 2%;
 }
 
-@media (max-width: 320px) {
-  .hero {
-    padding: 5px;
-    width: auto;
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
   }
-  .hero-content {
+  ul {
+    position: fixed;
     width: 100%;
-  }
-  .hero-content h1 {
-    font-size: 25px;
-    padding: 10px;
-    margin: 5px;
-    margin-bottom: 2px;
-  }
-  .hero-content h2 {
-    font-size: 10px;
-  }
-  .hero-content p {
-    font-size: smaller;
-  }
-  .row {
-    padding-bottom: 5%;
-    margin-top: 10px;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
     text-align: center;
+    transition: all 0.5s;
   }
-  .card {
-    display: grid;
-    grid-auto-rows: 15rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
-    gap: 1rem;
-    padding: 10px;
-    margin: 5%;
-    font-size: x-small;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
-  .card .btn-primary {
-    font-size: 12px;
-    width: 150px;
-    padding: 3px;
-    margin-left: 0;
+  nav ul li a {
+    font-size: 20px;
   }
-}
-@media (max-width: 768px) {
-  .hero, h1, h2, .row, .card, .btn-primary {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    gap: 1rem;
+  li a:hover, li a.active {
+    background: none;
+    color: red;
   }
-  .hero-content {
-    width: 100%;
-  }
-  .hero-content h2 {
-    margin: 2%;
-  }
-  .text-center {
-    text-align: center;
-    justify-content: center;
-    margin: 35%;
-    margin: 110px;
-    margin-left: 0px;
-  }
-  footer {
-    width: 100%;
-  }
-  .card-ls {
-    margin-left: auto;
-  }
-}
-@media (max-width: 1200px) {
-  .card {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    gap: 1rem;
-    padding: 15px;
-    margin-top: 30px;
-  }
-  .row {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-  }
-  .card-ls {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    gap: 1rem;
-    font-size: 15px;
-  }
-  .card-ls h1 {
-    font-size: 35px;
-  }
-  .divcontact {
-    margin-left: 20px;
+  #check:checked ~ ul {
+    left: 0;
   }
 }
 
