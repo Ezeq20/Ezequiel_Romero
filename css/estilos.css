@@ -250,73 +250,44 @@ button:hover {
 
 @media (max-width: 320px) {
   .hero {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 30px;
-    width: 100%;
+    padding: 5px;
+    width: auto;
+    display: block;
   }
   .hero-content {
     width: 100%;
   }
   .hero-content h1 {
-    font-size: 30px;
-    padding: 20px;
-    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
     margin-bottom: 2px;
   }
   .hero-content h2 {
-    font-size: 20px;
+    font-size: 10px;
   }
   .hero-content p {
     font-size: smaller;
   }
   .row {
-    padding-bottom: 25%;
-  }
-  .row .text-center {
-    margin-top: 20px;
-    margin: 15%;
+    padding-bottom: 5%;
+    margin-top: 10px;
     text-align: center;
-    justify-items: center;
-    padding: 15px;
   }
   .card {
     display: grid;
-    width: 100%;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
     gap: 1rem;
-    padding: 20px;
-    margin: 40%;
-    font-size: small;
+    padding: 10px;
+    margin: 5%;
+    font-size: x-small;
   }
   .card .btn-primary {
-    font-size: 15px;
-    width: 200px;
-    padding: 5px;
-    margin-left: -2px;
-    text-align: center;
-  }
-  .nav-link,
-  .navbar-brand {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 80px;
-    left: 100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li {
-    font-size: 20px;
+    font-size: 12px;
+    width: 150px;
+    padding: 3px;
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
