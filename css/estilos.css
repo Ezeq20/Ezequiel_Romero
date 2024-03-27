@@ -59,9 +59,22 @@ img {
 }
 
 nav {
+  display: flex;
   background: #2fcdcd;
   height: 80px;
   width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  position: absolute;
+  gap: 1rem;
+  box-shadow: 0 0 0 100vmax black;
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: end;
 }
 
 .enlace {
@@ -79,6 +92,8 @@ nav {
 nav ul {
   float: right;
   margin-right: 20px;
+  flex-direction: column;
+  align-items: end;
 }
 
 nav ul li {
@@ -515,6 +530,9 @@ button:hover {
   nav {
     height: 50px;
     width: 110%;
+  }
+  .nav-list {
+    font-size: smaller;
   }
   .logo {
     margin-left: -210px;
