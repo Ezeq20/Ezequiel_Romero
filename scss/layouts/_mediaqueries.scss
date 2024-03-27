@@ -22,9 +22,41 @@
         grid-gap: 30px;
         padding: 35px 0px;
     } 
+
+	.row {
+		.card-main {
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			justify-content: space-evenly;
+			padding: 5px;
+			margin-bottom: 500px;
+			margin-left: -5px;
+		}
+	
+		.card-ls {
+			width: 400px;
+			height: 500px;
+			padding: 30px;
+			margin: 200px auto;
+			padding-top: 20px;
+			margin-left: 400px;
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width:768px){
+
+	nav {
+		height: 60px;
+		width: 110%;
+	}
 
 	.pie-pagina .grupo-1 {
         width: 75%;
@@ -34,11 +66,15 @@
     } 
 
 	.logo {
-		margin-left: -615px;
+		margin-left: -500px;
+		padding-bottom: 20px;	
 	}
 
 	.checkbtn{
 		display: block;
+		width: 250px;
+		margin-top: -10px;
+		margin-right: 5px;
 	}
 
 	ul{
@@ -70,18 +106,228 @@
 	#check:checked ~ ul{
 		left:0;
 	}
+
+	.hero-content {
+		h1 {
+			font-size: 60px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		h2 {
+			font-size: 35px;
+			margin-top: 20px;
+			margin-bottom: 300px;
+		}
+
+		p {
+			font-size: 20px;
+			margin-top: -250px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.card {
+		padding-top: 25px;
+		padding-bottom: 5;
+		margin-top: 2px;
+		margin-bottom: 30px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
+
+		&-body {
+			padding-top: 50px;
+			margin-top: -400px;
+			margin-bottom: 30px;
+		
+			h3{
+				font-size: 20px;
+			}
+	
+			p {
+				font-size: 10px;
+			}
+		}
+	
+		&-img-top {
+			margin-bottom: 400px;
+			width: 40%;
+		}
+
+		h3{
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		.btn-primary {
+			font-size: 15px;
+			width: 200px;
+		}
+	}
+
+	.row {
+		padding-top: 20px;
+		padding-bottom: 2350px;
+
+		h2 {
+			font-size: 25px;
+			padding-top: -500px;
+			margin-top: -20px;
+		}
+	}
+
+	.divcontact { 
+		height: 550px;
+		max-width: 600px;
+		margin: 2em auto;
+		padding: 2em;
+		padding-bottom: 1rem;
+		background-color: $primary-color;
+		box-shadow: 0 0 20px 20px #191919;
+		border: 5px solid #000000;
+		border-radius: 2%;
+		padding-left: 200px;
+	}
+
+	.row {
+		.card-main {
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			justify-content: space-evenly;
+			padding: 5px;
+			margin-bottom: 500px;
+			margin-left: -5px;
+		}
+	
+		.card-ls {
+			width: 300px;
+			height: 500px;
+			padding: 30px;
+			margin: 200px auto;
+			padding-top: 20px;
+			margin-left: 250px;
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width:320px){
+
+	nav {
+		height: 50px;
+		width: 110%;
+	}
+
+	.logo {
+		margin-left: -260px;
+		width: 80px;
+		height: 50px;
+	}
+
+	.checkbtn{
+		display: block;
+		width: 25px;
+		margin-top: -15px;
+	}
+
 	.pie-pagina {
-		width: 200%;
+		width: 100%;
 		background-color: $primary-color;
+		margin-top: -20px;
+		margin-bottom: -30px;
 
 		.grupo-1 {
-			width: 40%;
+			width: 90%;
 			grid-template-columns: repeat(1, 1fr);
-			grid-gap: 10px;
+			display: grid;
+			grid-gap: 2px;
 			padding: 160px 0px;
+			padding-top: 2px;
+			padding-bottom: 5px;
 		} 
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	.hero-content {
+		h1 {
+			font-size: 35px;
+			margin-top: -100px;
+		}
+		
+		h2 {
+			font-size: 20px;
+			margin-top: -300px;
+		}
+
+		p {
+			font-size: 10px;
+			margin-top: -300px;
+		}
+	}
+
+	.card {
+		padding-top: 5px;
+		padding-bottom: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
+
+		&-body {
+			padding-top: 5px;
+			margin-top: -400px;
+		
+
+			h3{
+				font-size: 20px;
+			}
+	
+			p {
+				font-size: 10px;
+			}
+		}
+	
+		&-img-top {
+			margin-bottom: 400px;
+			width: 50%;
+		}
+
+		h3{
+			font-size: 17px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+
+		.btn-primary {
+			font-size: 13px;
+			width: 200px;
+		}
+	}
+
+	.row {
+			padding-top: 2px;
+			padding-bottom: 1300px;
+
+		h2 {
+			font-size: 19px;
+			padding-top: -500px;
+			margin-top: -20px;
+		}
 	}
 }

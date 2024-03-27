@@ -21,7 +21,7 @@
           <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
           </label>
-          <a href="#" class="enlace">
+          <a href="../index.html" class="enlace">
             <img src="../assets/Imagenes/logo.jpg" alt="logo de MR Company" class="logo"
           </a>
           <ul>
@@ -29,8 +29,7 @@
             <li><a href="tv-shows.html">TV Shows</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="more.html">more</a></li>
-            <li><a href="log-in.html">Log in</a></li>
-            <li><a href="sign-up.html">Sign up</a></li>
+            <li><a href="sign-up.html">Sign up/ Log in</a></li>
             <li><a href="contact.html">Contact</a></li>
           <ul>
         </nav>
@@ -40,8 +39,31 @@
     <main class="row">
         <div class="card-main">
           <div class="card-ls">
+            <form action="#" method="post" class="form" id="login-form">
+              <h2 class="titletwo">Iniciar Sesión</h2>
+              <label for="login-username">Nombre de Usuario:</label>
+              <input
+                type="text"
+                id="login-username"
+                name="login-username"
+                required
+              />
+
+              <label for="login-password">Contraseña:</label>
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                required
+              />
+              <button type="submit">Iniciar Sesión</button>
+            </form>
+          </div>
+        </div>
+
+          <div class="card-ls">
             <form action="#" method="post" class="form" id="register-form">
-              <h1 class="titletwo">Registrarse</h1>
+              <h2 class="titletwo">Registrarse</h2>
               <label for="username">Nombre de Usuario:</label>
               <input type="text" id="username" name="username" required />
 
@@ -53,7 +75,7 @@
 
               <button type="submit">Registrarse</button>
             </form>
-          </div>
+        </div>
     </main>
 
     <footer class="pie-pagina">
