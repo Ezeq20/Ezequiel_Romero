@@ -11,7 +11,7 @@
     />
     <script src="https://kit.fontawesome.com/77fe977999.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css" />
-    <title>TV Shows</title>
+    <title>Signup/Login</title>
   </head>
   <body>
     <header>
@@ -37,39 +37,28 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <article class="hero-content">
-          <h1 class="text-center">Los Mejores Shows de Televisión</h1>
-        </article>
-      </section>
+    <main class="row">
+          <div class="card-ls">
+            <form action="#" method="post" class="form" id="login-form">
+              <h2 class="titletwo">Iniciar Sesión</h2>
+              <label for="login-username">Nombre de Usuario:</label>
+              <input
+                type="text"
+                id="login-username"
+                name="login-username"
+                required
+              />
 
-      <section class="row justify-content-around my-5">
-        <article class="card col-md-6">
-          <img src="../assets/Imagenes/shark-tank.JPEG" class="card-img-top" alt="Póster de Sharktank">
-          <div class="card-body">
-            <h2 class="card-title">Sharktank</h2>
-            <p class="card-text">Todo lo que Debes Saber. Shark Tank México es un programa de
-              televisión en el cual un grupo de inversionistas, llamados
-              “tiburones”, evalúan las propuestas de negocios de emprendedores y
-              deciden si invertir o no.</p>
-            <a href ="https://www.youtube.com/watch?v=9VdFtY1fa4Y&pp=ygUfdHJhaWxlciBkZSBsYSBjYXNhIGRlIHNoYXJrdGFuaw%3D%3D" target="blank" class="btn btn-primary">watch the trailer</a>
+              <label for="login-password">Contraseña:</label>
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                required
+              />
+              <button type="submit">Iniciar Sesión</button>
+            </form>
           </div>
-        </article>
-
-        <article class="card col-md-6">
-          <img src="../assets/Imagenes/famosos.JPEG" class="card-img-top" alt="Póster de La Casa de los Famosos México">
-          <div class="card-body">
-            <h2 class="card-title">La Casa de los Famosos México</h2>
-            <p class="card-text">Protagonizada por un grupo de famosas personalidades latinas de
-              diferentes orígenes, antecedentes, personalidades, actitudes y
-              generaciones, la serie abre más de una ventana a los momentos más
-              íntimos mientras se presencia el dinamismo de convivencia entre
-              ellos.</p>
-            <a href ="https://www.youtube.com/watch?v=5hSSNEM3P5Y&pp=ygUodHJhaWxlciBkZSBsYSBjYXNhIGRlIGxvcyBmYW1vc29zIG1leGljbw%3D%3D" target="blank" class="btn btn-primary">watch the trailer</a>
-          </div>
-        </article>
-      </section>
     </main>
 
     <footer class="pie-pagina">
