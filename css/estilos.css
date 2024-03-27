@@ -70,7 +70,10 @@ nav {
 }
 
 .logo {
-  height: 40px;
+  width: 120px;
+  height: 80px;
+  margin-left: -1835px;
+  margin-top: -20px;
 }
 
 nav ul {
@@ -93,11 +96,12 @@ nav ul li a {
 }
 
 li a.active, li a:hover {
-  background: 90;
+  background: #0d2033;
   transition: 0.5s;
 }
 
 .checkbtn {
+  display: none;
   font-size: 30px;
   color: #fff;
   float: right;
@@ -114,12 +118,13 @@ section {
   background: url(fondo.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
+  height: calc(100vh - 80px);
 }
 
 header {
   border-bottom: 1px solid #111;
   text-align: center;
-  padding: 10px 20px;
+  padding: 0;
 }
 
 footer {
@@ -173,15 +178,15 @@ footer {
   line-height: 45px;
   color: #fff;
   margin-right: 10px;
-  background-color: #2fcdcd;
+  background-color: #0d2033;
   text-align: center;
   transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: #1d3333;
+.pie-pagina .grupo-1 .red-social a a:hover {
+  color: #abf0f0;
 }
 .pie-pagina .grupo-2 {
-  background-color: #2fcdcd;
+  background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
@@ -353,7 +358,7 @@ button:hover {
   }
   li a:hover, li a.active {
     background: none;
-    color: red;
+    color: #0a1a2a;
   }
   #check:checked ~ ul {
     left: 0;
@@ -369,6 +374,11 @@ button:hover {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .checkbtn {
+    display: none;
   }
 }
 

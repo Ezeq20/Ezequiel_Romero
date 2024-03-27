@@ -5,12 +5,15 @@ nav {
 }
 
 .enlace {
-	position: absolute;
+	position:absolute;
 	padding: 20px 50px;
 }
 
 .logo {
-	height: 40px;
+	width: 120px;
+	height: 80px;
+	margin-left: -1835px;
+	margin-top: -20px;
 }
 
 nav ul {
@@ -33,11 +36,12 @@ nav ul li a {
 }
 
 li a.active, li a:hover {
-	background: 000090;
+	background: #0d2033;
 	transition: .5s;
 }
 
 .checkbtn {
+	display: none;
 	font-size: 30px;
 	color: #fff;
 	float: right;
@@ -54,4 +58,5 @@ section {
 	background: url(fondo.jpg) no-repeat;
 	background-size: cover;
 	background-position: center center;
+	height: calc(100vh - 80px);
 }
