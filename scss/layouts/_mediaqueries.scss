@@ -61,8 +61,10 @@
 	.pie-pagina .grupo-1 {
         width: 75%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+        grid-gap: 10px;
+        padding: 0px 0px;
+		padding-top: -900%;
+		margin-bottom: 20px;
     } 
 
 	.logo {
@@ -229,14 +231,14 @@
 	}
 
 	.logo {
-		margin-left: -260px;
+		margin-left: -210px;
 		width: 80px;
-		height: 50px;
+		height: 70px;
 	}
 
 	.checkbtn{
 		display: block;
-		width: 25px;
+		width: 105px;
 		margin-top: -15px;
 	}
 
@@ -263,13 +265,13 @@
 
 	.hero-content {
 		h1 {
-			font-size: 35px;
-			margin-top: -100px;
+			font-size: 25px;
+			margin-top: -60px;
 		}
 		
 		h2 {
 			font-size: 20px;
-			margin-top: -300px;
+			margin-top: -100px;
 		}
 
 		p {
@@ -279,10 +281,10 @@
 	}
 
 	.card {
-		padding-top: 5px;
+		padding-top: 50px;
 		padding-bottom: 0;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 100px;
+		margin-bottom: 2px;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		width: 100%;
@@ -328,6 +330,44 @@
 			font-size: 19px;
 			padding-top: -500px;
 			margin-top: -20px;
+		}
+	}
+
+	.divcontact { 
+		height: 600px;
+		max-width: 600px;
+		margin: 2em auto;
+		padding: 2em;
+		padding-bottom: 1rem;
+		margin-top: 200px;
+		margin-bottom:400px;
+	}
+
+	.row {
+		.card-main {
+			display: grid;
+			width: 300px;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			justify-content: space-evenly;
+			padding: 5px;
+			margin-bottom: 500px;
+			margin-left: -5px;
+		}
+	
+		.card-ls {
+			width: 200px;
+			height: 500px;
+			padding: 30px;
+			margin: 200px auto;
+			padding-top: 20px;
+			margin-left: 40px;
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem) , 1fr));
+			gap: 1rem;
+			text-align: center;
 		}
 	}
 }
